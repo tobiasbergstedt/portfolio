@@ -3,6 +3,7 @@
     <ul>
       <router-link
         :to="link.path"
+        @click="hideMenu()"
         v-for="(link, index) in navLinks"
         :key="index"
       >
@@ -12,18 +13,35 @@
       </router-link>
     </ul>
     <div class="social-links">
-      <i class="fab fa-linkedin" />
-      <i class="fab fa-github" />
+      <a href="https://linkedin.com/in/tobias-bergstedt"
+        ><i class="fab fa-linkedin"
+      /></a>
+      <a href="https://github.com/tobiasbergstedt"
+        ><i class="fab fa-github"
+      /></a>
+      <a href="https://vimeo.com/user22554711"><i class="fab fa-vimeo" /></a>
     </div>
   </nav>
 </template>
 
 <script>
   import navLinks from '../../public/navlinks.json'
+
   export default {
     data() {
       return {
-        navLinks: navLinks
+        navLinks: navLinks,
+        main: '',
+        showNav: false
+      }
+    },
+    methods: {
+      hideMenu() {
+        this.main = document.querySelector('main')
+        this.main.classList.toggle('open')
+        this.main.style.transform = 'translateX(0)'
+        this.main.style.transform = null
+        // transform: translateX(-300px)
       }
     }
   }
@@ -43,14 +61,14 @@
   }
 
   li {
-    color: #fff;
+    color: #262626;
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
     cursor: pointer;
   }
   li:hover {
-    color: #111;
+    color: #000;
   }
 
   a {
@@ -79,7 +97,11 @@
   .social-links i {
     position: relative;
     margin: 0 20px 0 0;
-    color: #fff;
+    color: #262626;
     font-size: 2rem;
+  }
+
+  .social-links i:hover {
+    color: #000;
   }
 </style>

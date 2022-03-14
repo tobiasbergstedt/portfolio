@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <img src="assets/" alt="" />
+    <router-link to="/" id="logo" />
     <ul>
       <router-link
         :to="link.path"
@@ -12,8 +12,13 @@
         </li>
       </router-link>
       <div id="social-links">
-        <i class="fab fa-linkedin" />
-        <i class="fab fa-github" />
+        <a href="https://linkedin.com/in/tobias-bergstedt"
+          ><i class="fab fa-linkedin"
+        /></a>
+        <a href="https://github.com/tobiasbergstedt"
+          ><i class="fab fa-github"
+        /></a>
+        <a href="https://vimeo.com/user22554711"><i class="fab fa-vimeo" /></a>
       </div>
     </ul>
   </nav>
@@ -21,6 +26,7 @@
 
 <script>
   import navLinks from '../../public/navlinks.json'
+
   export default {
     data() {
       return {
@@ -32,11 +38,23 @@
 
 <style scoped>
   nav {
-    background-color: white;
+    background-color: #262626;
     display: flex;
     width: 100%;
     height: 80px;
     align-items: center;
+  }
+
+  #logo {
+    background: url('/assets/logo.svg') center top no-repeat;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 60px;
+    height: 60px;
+  }
+
+  #logo:hover {
+    background-image: url('/assets/logo-hover.svg');
   }
 
   ul {
@@ -47,22 +65,22 @@
   }
 
   li {
-    font-size: 1.5rem;
     padding: 0.7rem 1.4rem;
-    margin-right: 0.5rem;
+    margin-right: 0.25rem;
     cursor: pointer;
   }
 
   li:hover {
-    color: #7ca971;
+    color: #5d8fd1;
   }
 
   a {
     text-decoration: none;
+    color: #fff;
   }
 
   a:visited {
-    color: #333;
+    color: #fff;
   }
 
   #social-links {
@@ -75,7 +93,26 @@
     position: relative;
     margin-right: 2rem;
     font-size: 1.6rem;
-    color: #333;
+    color: #fff;
     cursor: pointer;
+  }
+
+  i:hover {
+    color: #5d8fd1;
+  }
+
+  @media screen and (min-width: 1200px) {
+    nav {
+      padding-left: 200px;
+    }
+    #social-links {
+      padding-right: 200px;
+    }
+  }
+
+  @media screen and (min-width: 1350px) {
+    li {
+      font-size: 1.5rem;
+    }
   }
 </style>

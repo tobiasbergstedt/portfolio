@@ -11,12 +11,12 @@
   },
   {
     "text": "My skills",
-    "path": "/about",
+    "path": "/skills",
     "icon": "ion-ios-home"
   },
   {
     "text": "Work",
-    "path": "/",
+    "path": "/work",
     "icon": "ion-ios-home"
   },
   {
