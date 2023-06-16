@@ -49,6 +49,18 @@ export default createRouter({
     {
       component: SkillsView,
       path: '/skills'
+    },
+    {
+      component: WorkDetailsView,
+      path: '/galleritb'
+    },
+    {
+      component: WorkDetailsView,
+      path: '/fbk2'
+    },
+    {
+      component: WorkDetailsView,
+      path: '/arenaultimatum'
     }
   ]
 })

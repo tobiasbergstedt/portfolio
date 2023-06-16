@@ -5,12 +5,17 @@
       <div id="left-grid">
         <p>JavaScript</p>
         <p>HTML / CSS</p>
-        <p>Vue.js</p>
+        <p>Vue</p>
         <p>Vite</p>
         <p>Java</p>
-        <p>React.js</p>
-        <p>Node.js</p>
+        <p>React</p>
+        <p>React Native</p>
+        <p>Next</p>
+        <p>Node</p>
         <p>TypeScript</p>
+        <p>Strapi</p>
+        <p>WordPress</p>
+        <p>Firebase</p>
         <p>MySQL</p>
       </div>
       <h1 class="blue-color">Tools</h1>
@@ -19,9 +24,11 @@
         <p>Adobe Creative Cloud</p>
         <p>Visual Studio Code</p>
         <p>Figma</p>
+        <p>Scrum</p>
+        <p>Trello</p>
+        <p>Sketch</p>
         <p>Autodesk Maya</p>
         <p>Autodesk Inventor</p>
-        <p>Scrum</p>
       </div>
       <h1 class="blue-color third">Workplace Experience</h1>
       <div id="skills-card">
@@ -51,7 +58,7 @@
       <div>
         <h2>Front End Development</h2>
         <p class="bold blue-color">IT-Högskolan, Göteborg</p>
-        <p>august 2021 - now</p>
+        <p>august 2021 - june 2023</p>
       </div>
       <div>
         <h2>3D Animation and Visualization</h2>

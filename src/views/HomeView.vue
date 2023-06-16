@@ -21,17 +21,17 @@
   </div>
   <div class="list-container">
     <ul>
+      <a href="https://arena-5ce01.web.app"
+        ><li id="card-7"><div class="overlay" /></li
+      ></a>
+      <a href="galleritb/index.html"
+        ><li id="card-6"><div class="overlay" /></li
+      ></a>
       <a href="swindlr/index.html"
         ><li id="card-4"><div class="overlay" /></li
       ></a>
-      <router-link to="/work/10"
-        ><li id="card-3"><div class="overlay" /></li
-      ></router-link>
-      <a href="pcc/index.html"
-        ><li id="card-2"><div class="overlay" /></li
-      ></a>
-      <router-link to="/work/3"
-        ><li id="card-1"><div class="overlay" /></li
+      <router-link to="/work/12"
+        ><li id="card-5"><div class="overlay" /></li
       ></router-link>
     </ul>
   </div>
@@ -45,7 +45,7 @@
     place-items: center;
     gap: 2rem;
     grid-column-gap: 2rem;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     max-width: 100%;
     list-style: none;
     a {
@@ -53,8 +53,8 @@
     }
   }
   li {
-    width: 300px;
-    height: 400px;
+    width: 120px;
+    height: 160px;
     background-color: white;
     color: black;
     border-radius: 1rem;
@@ -124,6 +124,24 @@
     -o-background-size: cover;
     background-size: cover;
   }
+  #card-5 {
+    background: url(/assets/card-5.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  #card-6 {
+    background: url(/assets/card-6.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  #card-7 {
+    background: url(/assets/card-7.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
   #button-container {
     display: flex;
     justify-content: center;
@@ -132,6 +150,10 @@
   @media screen and (min-width: 768px) {
     ul {
       grid-template-columns: 1fr 1fr;
+      li {
+        width: 300px;
+        height: 400px;
+      }
     }
     #greeting {
       font-size: 1.5rem;
