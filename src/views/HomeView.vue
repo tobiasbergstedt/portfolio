@@ -21,18 +21,21 @@
   </div>
   <div class="list-container">
     <ul>
+      <a href="https://tobiasbergstedt.se/pellerin"
+        ><li id="card-8"><div class="overlay" /></li
+      ></a>
       <a href="https://arena-5ce01.web.app"
         ><li id="card-7"><div class="overlay" /></li
+      ></a>
+      <a href="https://tobiasbergstedt.se/sanrachna"
+        ><li id="card-9"><div class="overlay" /></li
       ></a>
       <a href="galleritb/index.html"
         ><li id="card-6"><div class="overlay" /></li
       ></a>
-      <a href="swindlr/index.html"
-        ><li id="card-4"><div class="overlay" /></li
-      ></a>
-      <router-link to="/work/12"
+      <!-- <router-link to="/work/12"
         ><li id="card-5"><div class="overlay" /></li
-      ></router-link>
+      ></router-link> -->
     </ul>
   </div>
 </template>
@@ -138,6 +141,18 @@
   }
   #card-7 {
     background: url(/assets/card-7.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  #card-8 {
+    background: url(/assets/card-8.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  #card-9 {
+    background: url(/assets/card-9.png) no-repeat center center;
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
